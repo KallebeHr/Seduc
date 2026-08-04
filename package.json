@@ -1,5 +1,5 @@
 {
-  "name": "AdvLadingPages",
+  "name": "Tropical",
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
@@ -14,9 +14,10 @@
     "@vuelidate/core": "^2.0.3",
     "@vuelidate/validators": "^2.0.4",
     "core-js": "^3.34.0",
+    "gsap": "^3.15.0",
     "leaflet": "^1.9.4",
     "roboto-fontface": "*",
-    "swiper": "^11.1.4",
+    "swiper": "^11.2.10",
     "vee-validate": "^4.13.1",
     "vue": "^3.4.0",
     "vuetify": "^3.5.0"
