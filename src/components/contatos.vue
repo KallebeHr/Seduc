@@ -1,13 +1,11 @@
 <template>
   <section class="contact" ref="sectionRef" :class="{ 'is-visible': visible }">
     <div class="contact__ambient" aria-hidden="true">
-      <div class="facet"></div>
     </div>
 
     <div class="contact__inner">
       <div class="contact__head">
         <div class="eyebrow-row">
-          <span class="eyebrow-mark" aria-hidden="true">✦</span>
           <p class="eyebrow">Fale conosco</p>
         </div>
         <h2 class="headline">Vamos <span class="word--accent">transformar</span> seu projeto em realidade</h2>
