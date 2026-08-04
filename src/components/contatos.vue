@@ -443,10 +443,20 @@ onBeforeUnmount(() => observer?.disconnect())
 
   position: relative;
   overflow: hidden;
+  width: 100%;
+  max-width: 100vw;
+  min-width: 0;
   background: var(--paper);
   color: var(--ink);
   font-family: 'Manrope', sans-serif;
   padding: clamp(64px, 9vw, 120px) clamp(20px, 6vw, 64px);
+}
+
+.contact__inner,
+.contact__grid,
+.form,
+.side {
+  min-width: 0;
 }
 
 .contact__ambient { position: absolute; inset: 0; pointer-events: none; overflow: hidden; z-index: 0; }
