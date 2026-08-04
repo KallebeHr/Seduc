@@ -1,11 +1,13 @@
 <template>
   <section class="contact" ref="sectionRef" :class="{ 'is-visible': visible }">
     <div class="contact__ambient" aria-hidden="true">
+      <div class="facet"></div>
     </div>
 
     <div class="contact__inner">
       <div class="contact__head">
         <div class="eyebrow-row">
+          <span class="eyebrow-mark" aria-hidden="true">✦</span>
           <p class="eyebrow">Fale conosco</p>
         </div>
         <h2 class="headline">Vamos <span class="word--accent">transformar</span> seu projeto em realidade</h2>
@@ -422,6 +424,13 @@ onBeforeUnmount(() => observer?.disconnect())
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap');
 
+.contact,
+.contact *,
+.contact *::before,
+.contact *::after {
+  box-sizing: border-box;
+}
+
 .contact {
   --paper: #F4F6F9;
   --ink: #2F2F2F;
@@ -438,7 +447,6 @@ onBeforeUnmount(() => observer?.disconnect())
   color: var(--ink);
   font-family: 'Manrope', sans-serif;
   padding: clamp(64px, 9vw, 120px) clamp(20px, 6vw, 64px);
-  padding-top: 0;
 }
 
 .contact__ambient { position: absolute; inset: 0; pointer-events: none; overflow: hidden; z-index: 0; }
@@ -453,7 +461,7 @@ onBeforeUnmount(() => observer?.disconnect())
 
 .contact__inner { position: relative; z-index: 2; max-width: 1080px; margin: 0 auto; }
 
-.contact__head { text-align: center; max-width: 620px; margin: 0 auto clamp(36px, 5vw, 52px);  }
+.contact__head { text-align: center; max-width: 620px; margin: 0 auto clamp(36px, 5vw, 52px); }
 .eyebrow-row { display: flex; align-items: center; justify-content: center; gap: 10px; margin-bottom: 14px; }
 .eyebrow-mark { color: var(--green); font-size: .85rem; }
 .eyebrow { font-size: .78rem; letter-spacing: .22em; text-transform: uppercase; color: var(--green-deep); margin: 0; font-weight: 700; font-family: 'Manrope', sans-serif; }
