@@ -7,6 +7,7 @@ export {}
 
 declare module 'vue' {
   export interface GlobalComponents {
+    AcessoRapido: typeof import('./src/components/AcessoRapido.vue')['default']
     AppFooter: typeof import('./src/components/AppFooter.vue')['default']
     Artigos: typeof import('./src/components/artigos.vue')['default']
     Atuacao: typeof import('./src/components/atuacao.vue')['default']
@@ -23,5 +24,6 @@ declare module 'vue' {
     RouterView: typeof import('vue-router')['RouterView']
     Servicos: typeof import('./src/components/servicos.vue')['default']
     SobreNos: typeof import('./src/components/SobreNos.vue')['default']
+    SubNavHeader: typeof import('./src/components/SubNavHeader.vue')['default']
   }
 }

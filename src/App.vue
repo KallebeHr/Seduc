@@ -1,18 +1,16 @@
 <template>
   <v-app >
-      <v-main class="e">
-      <router-view />
-      
+      <v-main >
+        <NavHeader />
+        <router-view />
       </v-main>
   </v-app>
 </template>
 
 <script setup>
+import NavHeader from './components/NavHeader.vue';
+
 
 </script>
 <style scoped>
-.e{
-    background:#F4F6F9;
-
-}
 </style>

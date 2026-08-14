@@ -1,13 +1,11 @@
 <template>
-      <NavHeader />
       <Hero />
-      <Servicos/>
-      <Contatos />
+      <AcessoRapido />
 </template>
 
 <script setup>
+import AcessoRapido from '@/components/AcessoRapido.vue';
 import Hero from '@/components/hero.vue';
-import Servicos from '@/components/servicos.vue';
-import Contatos from '@/components/contatos.vue';
+
 
 </script>
