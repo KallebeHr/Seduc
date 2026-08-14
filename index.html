@@ -17,11 +17,22 @@
     </div>
   </div>
 
-  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <!-- STDI Accessibility Plugin -->
+<script>
+  window.STDI_A11Y = {
+    apiKey: "5ff89537da739e6dae74c2c59aa1d37ff5999ed15aee8566a93ba9b3f252ef85",
+    primaryColor: "#2A9D8F",
+    secondaryColor: "#4CAF50",
+    position: "top-left",
+    buttonSize: 48
+  };
+</script>
+<script src="https://stdi.com.br/widget.js" defer></script>
+  <!-- <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script> -->
   <script type="module" src="/src/main.js"></script>
   <script>
     new window.VLibras.Widget('https://vlibras.gov.br/app');
-  </script>
+    </script>
 </body>
 
 </html>
