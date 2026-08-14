@@ -1,7 +1,7 @@
 <template>
   <header class="main-nav-header">
 
-   <SubNavHeader />
+   <!-- <SubNavHeader /> -->
     <div class="top-bar">
       <div class="top-bar__inner" :class="{ 'top-bar__inner--search-open': mobileSearchOpen }">
 
